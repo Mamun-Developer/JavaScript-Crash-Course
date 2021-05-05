@@ -13,6 +13,7 @@ function arrayAdded(arr){
     return res;
 }
 
+
 function arrayAdded2(p1,p2,...data){ //rest in param
     console.log(data);
 }
@@ -40,10 +41,27 @@ ll(13);
 
 func(12) //returns 24
 
+/*
+ * calls a function and returns the result of that fucntion
+ */
 function fff(f1,v1){
     let res = f1(v1);
     return res
 }
-fff(func,12);
+console.log(fff(func,30));
 
 console.log(func(321))
+
+
+function f(f1,f2,v1,v2){
+    f1(v1)
+}
+
+let ff1 = function(a){
+    return a*2
+}
+let ff2 = function(a){
+    return a*3
+}
+
+f(ff1,ff2,12,13)
